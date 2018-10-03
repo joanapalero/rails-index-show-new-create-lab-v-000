@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <div>
   <% @coupons.each do |coupon| %>
     <div><%= link_to coupon.coupon_code, coupon_path(coupon) %></div>
     <div><%= link_to coupon.store, coupon_path(coupon) %></div>
   <% end %>
 </div>
+=======
+<%@coupons.each do |coupon|%>
+  <%=link_to(coupon.coupon_code + coupon.store , coupon_path(coupon))%>
+  <br>
+<%end%>
+>>>>>>> 3ae9dd057aff1fbc19cf94f77c0f402693c7b930

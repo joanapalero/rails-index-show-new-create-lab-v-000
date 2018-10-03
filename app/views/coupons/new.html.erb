@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h2>Coupon Form</h2>
 <%= form_tag coupons_path do %>
   <label>Coupon Code:</label><br>
@@ -5,4 +6,11 @@
    <label>Store:</label><br>
   <%= text_area_tag :'coupon[store]' %><br>
    <%= submit_tag "Submit Coupon" %>
+=======
+<h3>Coupon Form</h3>
+<%= form_tag(coupons_path) do %>
+  <%= text_field_tag(:"coupon[coupon_code]", nil, placeholder: 'Coupon Code')%>
+  <%= text_field_tag(:"coupon[store]", nil, placeholder: 'Store')%>
+  <%= submit_tag("Submit Coupon")%>
+>>>>>>> 3ae9dd057aff1fbc19cf94f77c0f402693c7b930
 <% end %>
